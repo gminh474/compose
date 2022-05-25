@@ -6,8 +6,6 @@ var app = express();
 
 console.log('Demarrage');
 
-console.log('Redis sur ' +process.env.REDIS_PORT_6379_TCP_ADDR + ':' + process.env.REDIS_PORT_6379_TCP_PORT);
-
 // Utiliser l'entree cree dans le /etc/hosts
 var client = redis.createClient('6379', 'redis');
 
